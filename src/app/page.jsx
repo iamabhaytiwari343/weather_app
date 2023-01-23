@@ -1,10 +1,16 @@
-
-
+import Feed from "components/Feed";
+import Sidebar from "components/Sidebar";
+import Widget from "components/Widget";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       
-    </div>
+      <Sidebar />
+      {/* <Feed /> */}
+      {/* <Widget /> */}
+    
+    </main>
+    
   )
 }
