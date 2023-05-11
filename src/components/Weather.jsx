@@ -1,40 +1,40 @@
 import "./weather.css";
 import React from 'react';
-import sunny from '../icons/01d.png'
 
-const Weather = () => {
+
+const Weather = ({ data }) => {
     return (
         <div className="weather">
             <div className="top">
                 <div>
-                    <p className="city">Belgrade</p>
-                    <p className="description">Sunny</p>
+                    <p className="city">{data.city}</p>
+                    <p className="description">{data.weather[0].description}</p>
                 </div>
 
-                <img src={sunny} alt="weather" className="weatherIcon" />
+                <img src={`icons/${data.weather[0].icon}.png`} alt="weather" className="weatherIcon" />
             </div>
             <div className="bottom">
-                <p className="temperature">18</p>
+                <p className="temperature">{Math.round(data.main.temp)}°C</p>
                 <div className="details">
                     <div className="parameterRow">
                         <span className="parameterLabel">Details</span>
 
                     </div>
                     <div className="parameterRow">
-                        <span className="parameterLabel">feels like</span>
-                        <span className="parameterValue">22 degree celsius</span>
+                        <span className="parameterLabel">Feels Like</span>
+                        <span className="parameterValue"> {Math.round(data.main.feels_like)}°C</span>
                     </div>
                     <div className="parameterRow">
-                        <span className="parameterLabel">wind</span>
-                        <span className="parameterValue">22 m/s</span>
+                        <span className="parameterLabel">Wind</span>
+                        <span className="parameterValue">{data.wind.speed} m/s</span>
                     </div>
                     <div className="parameterRow">
                         <span className="parameterLabel">Humidity</span>
-                        <span className="parameterValue">22 m/s</span>
+                        <span className="parameterValue">{data.main.humidity}%</span>
                     </div>
                     <div className="parameterRow">
-                        <span className="parameterLabel">pressure</span>
-                        <span className="parameterValue">22 m/s</span>
+                        <span className="parameterLabel">Pressure</span>
+                        <span className="parameterValue">{data.main.pressure} hPa</span>
                     </div>
                 </div>
             </div>
