@@ -1,3 +1,3 @@
 # weather app with rapidAPI and openweatherAPI
-![Alt image](./readme_images/one_lko.jpg)
-![Alt image](./readme_images/two_rnc.jpg)
+![picture alt](./readme_images/one_lko.jpg)
+![picture_alt](./readme_images/two_rnc.jpg)
