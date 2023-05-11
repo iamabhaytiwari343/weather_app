@@ -2,13 +2,13 @@ export const url = 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities';
 export const geoDBoptions = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '753d5abf17mshd27c2afb8c5cfb9p1f5cb3jsn6e5386a9bb2e',
+		'X-RapidAPI-Key': '',// your API KEY of rapidAPI GEODB
 		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
 	}
 };
 
 export const weatherAPI_URL="https://api.openweathermap.org/data/2.5";
-export const weatherAPI_KEY="004d9636f48479079ef848cb5945eb5b";
+export const weatherAPI_KEY=""; //YOUR API KEY OF OPEN WEATHER
 
 // try {
 // 	const response = await fetch(url, geoDBoptions);
