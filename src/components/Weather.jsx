@@ -14,7 +14,7 @@ const Weather = () => {
                 <img src={sunny} alt="weather" className="weatherIcon" />
             </div>
             <div className="bottom">
-                <p className="temperature">18 degree celsius</p>
+                <p className="temperature">18</p>
                 <div className="details">
                     <div className="parameterRow">
                         <span className="parameterLabel">Details</span>
